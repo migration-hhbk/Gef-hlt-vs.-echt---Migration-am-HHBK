@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gefühlt vs. echt – Migration am HHBK</title>
+  <meta name="description" content="Was wissen wir am HHBK wirklich über Migration – und was glauben wir nur? Hol dir 9 Stempel: schätzen, vergleichen, mitreden. Und: Sprachpaten am HHBK. Ein Schulprojekt der AIA31 am Heinrich-Hertz-Berufskolleg Düsseldorf.">
+  <meta name="theme-color" content="#4f1421">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="img/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Gefühlt vs. echt">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gefühlt vs. echt – Migration am HHBK">
+  <meta property="og:description" content="Hol dir 9 Stempel und sieh, wie weit Gefühl und Statistik beim Thema Migration auseinanderliegen. Ein Projekt der AIA31.">
+  <meta property="og:url" content="https://migration-hhbk.github.io/">
+  <meta property="og:image" content="https://migration-hhbk.github.io/img/og.png">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/atkinson-next-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/shantell-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>.page[hidden]{display:block!important}.js-only{display:none!important}.stepper .step{display:block!important}</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <!-- Gemeinsame SVG-Filter: Stempelfarbe und Bleistiftstrich -->
+  <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="ink" x="-6%" y="-10%" width="112%" height="120%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" result="noise"/>
+        <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -4.2 3.05" result="speckle"/>
+        <feComposite in="SourceGraphic" in2="speckle" operator="in" result="inked"/>
+        <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="1" seed="11" result="warp"/>
+        <feDisplacementMap in="inked" in2="warp" scale="2.4" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <filter id="graphite" x="-5%" y="-20%" width="110%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="2" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.9" result="grain"/>
+        <feComposite in="SourceGraphic" in2="grain" operator="in"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <header class="bar">
+    <a class="bar__brand" href="#/start" aria-label="Gefühlt vs. echt, zum Deckblatt"><span class="hand">gefühlt</span><span class="bar__vs"> vs. echt</span></a>
+    <nav class="bar__nav js-only" aria-label="Schnellzugriff">
+      <a class="bar__sp" id="bar-sp" href="#/sprachpaten">Sprachpaten</a>
+      <a class="bar__pass" id="bar-pass" href="#/pass" aria-label="Mein Pass">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="2.5" width="14" height="19" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="10" r="3.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.6 16.6h6.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <span class="bar__label">Pass</span>
+        <span class="bar__count" id="bar-count">1/9</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== Deckblatt: der Passeinband ===================== -->
+    <section class="page page--cover" id="start" aria-labelledby="t-start">
+      <div class="cover__front">
+      <p class="cover__school"><span>Heinrich-Hertz-Berufskolleg</span><span>Düsseldorf</span></p>
+
+      <div class="cover__emblem" aria-hidden="true">
+        <svg class="emblem" viewBox="0 0 120 120" focusable="false">
+          <defs>
+            <path id="em-oben" d="M60 107.5 a47.5 47.5 0 1 1 0 -95 a47.5 47.5 0 1 1 0 95" fill="none"/>
+            <path id="em-unten" d="M7.5 60 a52.5 52.5 0 0 0 105 0" fill="none"/>
+            <clipPath id="em-clip"><circle cx="60" cy="60" r="49.5"/></clipPath>
+          </defs>
+          <circle cx="60" cy="60" r="56.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width=".9"/>
+          <text font-size="6.4" fill="currentColor" text-anchor="middle"><textPath href="#em-oben" startOffset="50%">HEINRICH-HERTZ-BERUFSKOLLEG</textPath></text>
+          <text font-size="6.6" fill="currentColor" text-anchor="middle"><textPath href="#em-unten" startOffset="50%">DÜSSELDORF · AIA31</textPath></text>
+          <circle cx="10" cy="60" r="1.5" fill="currentColor"/><circle cx="110" cy="60" r="1.5" fill="currentColor"/>
+          <g transform="translate(60 60) scale(0.85) translate(-60 -60)">
+            <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M33 86 L37 46 L47 46 L51 86"/>
+              <path d="M36 56 L48 56 M35 66 L49 66 M34 76 L50 76"/>
+              <path d="M36 56 L49 66 M48 56 L35 66 M35 66 L50 76 M49 66 L34 76"/>
+              <path d="M47 50 L62 86"/>
+              <circle cx="42" cy="38" r="7"/>
+              <path d="M42 31 L42 45 M35 38 L49 38"/>
+              <path d="M62 86 L62 75 L67 70 L72 75 L72 86"/>
+              <path d="M80.5 86 L83 34 L85.5 86"/>
+              <path d="M76.5 44 Q83 38 89.5 44 L88 49 Q83 52 78 49 Z"/>
+              <path d="M83 34 L83 19"/>
+              <path d="M24 86 L96 86"/>
+            </g>
+            <g fill="none" stroke="currentColor" clip-path="url(#em-clip)" stroke-linecap="round">
+              <path d="M8 94 C 20 88, 32 100, 44 94 S 68 88, 80 94 S 104 100, 116 94" stroke-width="2"/>
+              <path d="M8 102 C 20 96, 32 108, 44 102 S 68 96, 80 102 S 104 108, 116 102" stroke-width="1.3"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <h1 id="t-start" class="headline" tabindex="-1">
+        <span class="sr-only">Gefühlt vs. echt</span>
+        <span class="headline__felt" aria-hidden="true">gefühlt<svg class="scribble" viewBox="0 0 300 24" preserveAspectRatio="none"><path d="M4 15 C 60 7, 120 21, 178 11 S 262 9, 296 14" /></svg></span>
+        <span class="headline__vs" aria-hidden="true">vs.</span>
+        <span class="headline__real" aria-hidden="true" id="hero-stamp"></span>
+      </h1>
+      <p class="cover__kind" aria-hidden="true">Reisepass</p>
+      <p class="cover__langs" aria-hidden="true"><span>PASSPORT</span><span>PASAPORT</span><span dir="rtl" lang="ar">جواز سفر</span><span>PASZPORT</span><span dir="rtl" lang="ckb">پاسپۆرت</span><span lang="uk">ПАСПОРТ</span><span>PASSAPORTO</span><span lang="el">ΔΙΑΒΑΤΗΡΙΟ</span><span>PUTOVNICA</span><span dir="rtl" lang="fa">گذرنامه</span></p>
+      </div>
+
+      <div class="cover__inside">
+      <p class="leitfrage">Was wissen wir am HHBK wirklich über Migration – und was glauben wir nur?</p>
+
+      <div class="cover__progress js-only">
+        <span class="dots" id="cover-dots" aria-hidden="true"></span>
+        <p id="cover-progress-text">1 von 9 Stempeln hast du schon.</p>
+      </div>
+
+      <p class="cover__hand" id="cover-hand" aria-hidden="true">aufklappen, wir müssen reden<svg viewBox="0 0 30 30"><path d="M27 3 C 16 5, 8 12, 6 25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M2 17 L6 26 L14 21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+      <div class="actions">
+        <a class="btn btn--gold" href="#/du" id="cover-go"><span id="cover-go-text">Pass aufklappen</span> <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--cream" href="#/sprachpaten">Sprachpaten: direkt anmelden</a>
+      </div>
+      <p class="cover__intro">Ein Pass für alle am HHBK. Hol dir 9 Stempel: Schätz Zahlen, reis durch die Geschichte, erleb einen Schulmorgen ohne Deutsch – und sieh, wie das ganze HHBK geantwortet hat.</p>
+      <p class="cover__meta">8 Stationen · ca. 8 Minuten · anonym, ohne Anmeldung · <a href="#/ergebnisse">Zuerst die Ergebnisse ansehen</a></p>
+      <p class="cover__proof" id="cover-proof" hidden></p>
+      </div>
+
+      <div class="mrz" aria-hidden="true"><span>P&lt;HHBKGEFUEHLT&lt;&lt;ECHT&lt;MIGRATION&lt;AM&lt;HHBK&lt;&lt;&lt;&lt;&lt;&lt;</span><span>AIA31&lt;&lt;&lt;&lt;&lt;2026DUS&lt;BAVIN&lt;ABDALAZIZ&lt;EREN&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+    </section>
+
+    <!-- ===================== 1 Kurz zu dir ===================== -->
+    <section class="page" id="du" aria-labelledby="t-du" hidden>
+      <h1 id="t-du" class="title" tabindex="-1">Kurz zu dir</h1>
+      <p class="lead">Vier kurze Fragen, eine nach der anderen. So sehen wir, wie unterschiedlich das HHBK das Thema erlebt. Wir speichern nur deine Antworten, nie deinen Namen.</p>
+
+      <form id="form-du" class="form stepper" novalidate>
+        <div class="stepper__head js-only" aria-hidden="true"><span class="stepper__count">Frage 1 von 4</span><span class="stepper__bar"><span></span></span></div>
+
+        <fieldset class="field step">
+          <legend>Hat deine Familie eine Einwanderungsgeschichte?</legend>
+          <div class="options" data-radio="herkunft"></div>
+        </fieldset>
+
+        <fieldset class="field step">
+          <legend>Welche Sprachen sprichst du – auch wenn es nur ein bisschen ist?</legend>
+          <div class="chips" data-langs="sprachen"></div>
+          <button type="button" class="linkbtn" data-more-langs aria-expanded="false">Mehr Sprachen zeigen</button>
+          <label class="textfield">
+            <span>Eine andere Sprache</span>
+            <input type="text" name="sprachen_andere" maxlength="40" autocomplete="off" spellcheck="false">
+          </label>
+        </fieldset>
+
+        <fieldset class="field step">
+          <legend>Wie gut fühlst du dich am HHBK akzeptiert – egal, woher du oder deine Familie kommt?</legend>
+          <div class="kreuz" data-kreuz="akzeptanz" data-low="gar nicht" data-high="voll und ganz"></div>
+        </fieldset>
+
+        <fieldset class="field step">
+          <legend>Wie gut kennst du dich mit dem Thema Migration aus?</legend>
+          <div class="kreuz" data-kreuz="wissen_vorher" data-low="kaum" data-high="sehr gut"></div>
+        </fieldset>
+
+        <div class="formnav">
+          <button type="button" class="btn btn--quiet js-only" data-step-back hidden>Zurück</button>
+          <button type="button" class="btn btn--primary js-only" data-step-next>Weiter</button>
+          <button type="submit" class="btn btn--primary" data-step-submit>Speichern und weiter</button>
+          <a class="btn btn--quiet" href="#/schaetzen" data-skip>Station überspringen</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===================== 2 Schätz mal ===================== -->
+    <section class="page" id="schaetzen" aria-labelledby="t-schaetzen" hidden>
+      <h1 id="t-schaetzen" class="title" tabindex="-1">Schätz mal</h1>
+      <p class="lead">Sechs Fragen, sechs Zahlen. Schätz aus dem Bauch – danach kommt der Stempel mit dem echten Wert. Am Ende bekommst du dein Bauchgefühl-Profil.</p>
+      <div id="quiz" class="quiz"></div>
+      <noscript><p>Für das Schätzspiel braucht dein Browser JavaScript.</p></noscript>
+    </section>
+
+    <!-- ===================== 3 Zeitreise ===================== -->
+    <section class="page" id="zeitreise" aria-labelledby="t-zeitreise" hidden>
+      <h1 id="t-zeitreise" class="title" tabindex="-1">Zeitreise: Migration ist nicht neu</h1>
+      <p class="lead">Zuwanderung, Auswanderung und Ausgrenzung ziehen sich durch die deutsche Geschichte. Tipp ein Jahr an: Jede Station verbindet ein Ereignis mit einem Begriff aus unserem GL-Unterricht.</p>
+      <div class="discover js-only" id="tl-progress" aria-live="polite"></div>
+
+      <ol class="timeline">
+        <li class="stop" data-terms="soziale_schliessung">
+          <details>
+            <summary><span class="stop__year">bis 1800</span><span class="stop__title">Zünfte: Wer darf dazugehören?</span></summary>
+            <div class="stop__body">
+              <p>Wer Metzger, Bäcker oder Weber werden wollte, musste in die Zunft. Dafür brauchte man Nachweise über Herkunft, Namen und Ruf. Wer keine „ehrliche Herkunft“ vorweisen konnte, blieb draußen.</p>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> soziale Schließung – Gruppen sichern ihre Vorteile, indem sie andere ausschließen, zum Beispiel über die Herkunft.</p>
+              <p class="source">Quelle: Unterrichtsmaterial Zunftwesen (Zunftordnung der Metzger)</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop" data-terms="push_pull">
+          <details>
+            <summary><span class="stop__year">1835–1900</span><span class="stop__title">Deutsche wandern aus</span></summary>
+            <div class="stop__body">
+              <p>Rund 4,8 Millionen Menschen verlassen Deutschland Richtung Übersee, vor allem nach Amerika. Sie fliehen vor Armut und Missernten und hoffen auf Land und Arbeit.</p>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> Push-Faktoren (Armut, keine Arbeit) und Pull-Faktoren (Chancen im Zielland).</p>
+              <p class="source">Quelle: Unterrichtsmaterial M1 „Deutschland – Entwicklung 1871–1918“</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop" data-terms="binnenwanderung">
+          <details>
+            <summary><span class="stop__year">1860–1910</span><span class="stop__title">Düsseldorf wächst durch Zuwanderung</span></summary>
+            <div class="stop__body">
+              <p>Die Industrialisierung braucht Arbeitskräfte. Etwa 1,7 Millionen Menschen ziehen von 1860 bis 1900 aus den preußischen Ostprovinzen nach Westen. Düsseldorf wächst von 80.695 Einwohnern (1875) auf 358.728 (1910) – mehr als das Vierfache.</p>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> Binnenwanderung und Urbanisierung im Kaiserreich, Wandel vom Agrar- zum Industriestaat.</p>
+              <p class="source">Quelle: Unterrichtsmaterial M1 und M2.3 „Bevölkerungsentwicklung der zehn größten Städte“</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop" data-terms="volksgemeinschaft sanktionen">
+          <details>
+            <summary><span class="stop__year">1933–1945</span><span class="stop__title">„Volksgemeinschaft“: Zugehörigkeit durch Ausschluss</span></summary>
+            <div class="stop__body">
+              <p>Die Nationalsozialisten bestimmen, wer zur „Volksgemeinschaft“ gehört – und wer nicht. Jüdinnen und Juden, Sinti und Roma und viele andere werden entrechtet, verfolgt und ermordet. Millionen Menschen werden zur Zwangsarbeit verschleppt. Kinder und Jugendliche werden in Hitlerjugend und BDM zur Gefolgschaft erzogen.</p>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> Volksgemeinschaft und Führerprinzip, Konformität durch positive und negative Sanktionen.</p>
+              <p class="source">Quelle: Unterrichtsmaterial Führerprinzip/Volksgemeinschaft, M11 „Organisation der Jugend im NS-Staat“</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop" data-terms="pluralismus">
+          <details>
+            <summary><span class="stop__year">1949</span><span class="stop__title">Das Grundgesetz zieht die Lehre</span></summary>
+            <div class="stop__body">
+              <blockquote class="law-quote"><p>„Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden.“</p><footer>Grundgesetz, Artikel 3 Absatz 3</footer></blockquote>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> Nach 1945 sollen Schulen kritisches Denken und Pluralismus fördern – verschiedene Meinungen und Lebensweisen zulassen.</p>
+              <p class="source">Quelle: Grundgesetz; Unterrichtsmaterial Klausurvorbereitung</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop stop--board" data-terms="demografie push_pull">
+          <details>
+            <summary><span class="stop__year">1955–1968</span><span class="stop__title">Anwerbeabkommen: Deutschland ruft Arbeitskräfte</span></summary>
+            <div class="stop__body">
+              <p>Die Wirtschaft wächst, es fehlen Arbeitskräfte. Die Bundesrepublik schließt Abkommen mit acht Ländern. Gedacht ist ein Aufenthalt auf Zeit – viele bleiben. Allein aus der Türkei kommen bis 1973 rund 870.000 Arbeitskräfte, etwa eine halbe Million geht zurück.</p>
+              <table class="board">
+                <caption>Anwerbeabkommen der Bundesrepublik</caption>
+                <thead><tr><th scope="col">Jahr</th><th scope="col">Land</th></tr></thead>
+                <tbody>
+                  <tr><td>1955</td><td>Italien</td></tr>
+                  <tr><td>1960</td><td>Spanien, Griechenland</td></tr>
+                  <tr><td>1961</td><td>Türkei</td></tr>
+                  <tr><td>1963</td><td>Marokko</td></tr>
+                  <tr><td>1964</td><td>Portugal</td></tr>
+                  <tr><td>1965</td><td>Tunesien</td></tr>
+                  <tr><td>1968</td><td>Jugoslawien</td></tr>
+                </tbody>
+              </table>
+              <blockquote class="hand-quote"><p>„Man hat Arbeitskräfte gerufen, und es kommen Menschen.“</p><footer>Max Frisch, 1965. Er schrieb das über die Schweiz – der Satz wird bis heute auch für Deutschland zitiert.</footer></blockquote>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> Pull-Faktoren, demografischer Wandel und Fachkräfte – damals wie heute.</p>
+              <p class="source">Quelle: bpb, Lexikon „Gastarbeiter“ und Dossier „1961: Anwerbeabkommen mit der Türkei“</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop">
+          <details>
+            <summary><span class="stop__year">1973</span><span class="stop__title">Anwerbestopp – die Familien kommen nach</span></summary>
+            <div class="stop__body">
+              <p>Mit der Ölpreiskrise endet die Anwerbung. Viele Arbeitskräfte holen ihre Familien nach. Aus „Gästen“ werden Nachbarinnen, Kollegen und Eltern von Schulkindern.</p>
+              <p class="source">Quelle: bpb, Lexikon „Gastarbeiter“</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop" data-terms="integration">
+          <details>
+            <summary><span class="stop__year">2005</span><span class="stop__title">Ein Gesetz für Integration</span></summary>
+            <div class="stop__body">
+              <p>Mit dem Zuwanderungsgesetz gibt es zum ersten Mal bundesweit Integrationskurse mit Sprachunterricht und Orientierung.</p>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> Integration heißt Teilhabe – an Bildung, Arbeit, Wohnen und Politik. Sie ist ein wechselseitiger Prozess.</p>
+              <p class="source">Quelle: Zuwanderungsgesetz (in Kraft seit 1. Januar 2005); Arbeitsblatt „Migration – ein ewiges Streitthema?“</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop">
+          <details>
+            <summary><span class="stop__year">2010</span><span class="stop__title">Ein Satz wird zum Dauerstreit</span></summary>
+            <div class="stop__body">
+              <p>Bundespräsident Christian Wulff sagt: „Der Islam gehört inzwischen auch zu Deutschland.“ Seitdem wird über diesen Satz gestritten. Beide Seiten findest du auf Seite 5.</p>
+              <p><a class="inline-link" href="#/streitfrage">Zur Streitfrage</a></p>
+            </div>
+          </details>
+        </li>
+        <li class="stop" data-terms="triggerpunkte">
+          <details>
+            <summary><span class="stop__year">2015/16</span><span class="stop__title">Viele Menschen suchen Schutz</span></summary>
+            <div class="stop__body">
+              <p>Hunderttausende Menschen fliehen nach Deutschland, viele aus Syrien. Die Debatte wird härter. Der Soziologe Steffen Mau zeigt aber: Die Einstellungen zu Migration sind danach nicht nach rechts gerückt. Gestritten wird vor allem an „Triggerpunkten“, an denen Gefühle hochkochen.</p>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> Triggerpunkte und gesellschaftliche Spaltung.</p>
+              <p class="source">Quelle: Unterrichtsmaterial „Gespaltene Gesellschaft“ (Interview mit Steffen Mau)</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop">
+          <details>
+            <summary><span class="stop__year">2024–2025</span><span class="stop__title">So viele Einbürgerungen wie nie</span></summary>
+            <div class="stop__body">
+              <p>Seit Juni 2024 kann man sich nach fünf statt acht Jahren einbürgern lassen und den alten Pass behalten. 2025 werden 332.500 Menschen Deutsche – ein Rekord. Im Oktober 2025 schafft der Bundestag die schnellere Einbürgerung nach drei Jahren wieder ab.</p>
+              <p class="source">Quelle: Destatis, Pressemitteilung Nr. 186 vom 3. Juni 2026; Bundestagsbeschluss vom 8. Oktober 2025</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop">
+          <details>
+            <summary><span class="stop__year">heute</span><span class="stop__title">Neue Ursachen: der Klimawandel</span></summary>
+            <div class="stop__body">
+              <p>Steigt der Meeresspiegel, verlieren Menschen auf Inselstaaten wie Kiribati ihr Zuhause. Einen eigenen rechtlichen Schutz als „Klimaflüchtling“ gibt es bisher nicht.</p>
+              <p class="concept"><strong>Aus dem Unterricht:</strong> internationale Verantwortung für Staaten, die den Klimawandel kaum verursacht haben.</p>
+              <p class="source">Quelle: Unterrichtsmaterial „Kiribati – ein Vorbote unserer Klimazukunft?“</p>
+            </div>
+          </details>
+        </li>
+        <li class="stop stop--now">
+          <details>
+            <summary><span class="stop__year">jetzt</span><span class="stop__title">Am HHBK</span></summary>
+            <div class="stop__body">
+              <p>44,6 % der Schülerinnen und Schüler in NRW haben eine Zuwanderungsgeschichte, an beruflichen Schulen 37,6 %. Wie es bei uns aussieht, zeigt Seite 8.</p>
+              <p class="source">Quelle: IT.NRW, Schuljahr 2025/26</p>
+            </div>
+          </details>
+        </li>
+      </ol>
+
+      <aside class="margin-note">
+        <p class="hand">Migration ist in Deutschland nicht neu. Neu ist, wie wir heute damit umgehen. Aus unserer Geschichte folgt die Verantwortung, niemanden pauschal auszugrenzen.</p>
+      </aside>
+    </section>
+
+    <!-- ===================== 4 Ein Morgen ohne Deutsch ===================== -->
+    <section class="page" id="morgen" aria-labelledby="t-morgen" hidden>
+      <h1 id="t-morgen" class="title" tabindex="-1">Ein Morgen ohne Deutsch</h1>
+      <p class="lead">Du bist neu am HHBK. Du sprichst drei Sprachen – nur Deutsch noch kaum. Stell ein, wie gut dein Deutsch ist, und sieh, was du verstehst.</p>
+      <p class="disclaimer">Fiktive Geschichte, angelehnt an typische Situationen beim Schulstart in einer neuen Sprache.</p>
+
+      <div class="level js-only" id="level">
+        <label for="level-input" class="level__label">Dein Deutsch: <span class="level__value" id="level-value">A1</span></label>
+        <input type="range" id="level-input" min="0" max="4" step="1" value="0" aria-describedby="level-name key-meter-text">
+        <div class="level__ticks" aria-hidden="true"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span></div>
+        <p class="level__name" id="level-name"></p>
+        <div class="meter">
+          <p class="meter__text" id="key-meter-text">Schlüsselwörter verstanden: <b id="key-meter-n">0 von 0</b></p>
+          <div class="meter__bar" aria-hidden="true"><div class="meter__fill" id="key-meter-fill"></div></div>
+        </div>
+      </div>
+
+      <div id="moments" class="moments"></div>
+
+      <div id="morgen-after" class="after" hidden>
+        <h2>Derselbe Morgen – mit Sprachpatin</h2>
+        <p>Stell dir vor, um 7:45 Uhr wartet jemand aus der Oberstufe am Eingang auf dich. Sie spricht deine Sprache und Deutsch. Sie bringt dich zu B 2.07, erklärt dir nach der Stunde, was „sonstige Mitarbeit“ bedeutet, und nimmt dich in der Pause mit in die Mensa. Genau das schlagen wir vor.</p>
+        <figure class="voice" data-voice="1"></figure>
+
+        <div class="cta-card">
+          <p class="kicker">Du könntest diese Person sein</p>
+          <h3>Sprichst du Deutsch und eine weitere Sprache?</h3>
+          <p>Dann kannst du genau so einen Morgen leichter machen. Die Anmeldung dauert eine Minute.</p>
+          <div class="actions">
+            <a class="btn btn--gold" href="#/sprachpaten?r=helfen">Sprachpatin oder -pate werden</a>
+            <a class="btn btn--cream" href="#/loesung">Erst die Idee ansehen</a>
+          </div>
+        </div>
+
+        <form id="form-barrieren" class="form form--inline" novalidate>
+          <fieldset class="field">
+            <legend>Kennst du solche Momente vom HHBK? Wo hast du hier schon Hürden erlebt?</legend>
+            <p class="field__hint">Mehrere Antworten möglich. Gilt für alle – egal, ob du Deutsch als erste Sprache sprichst.</p>
+            <div class="options" data-check="barrieren"></div>
+          </fieldset>
+          <button type="submit" class="btn btn--line">Antwort speichern</button>
+          <p class="saved-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== 5 Streitfrage ===================== -->
+    <section class="page" id="streitfrage" aria-labelledby="t-streitfrage" hidden>
+      <h1 id="t-streitfrage" class="title" tabindex="-1">Streitfrage: Gehört der Islam zu Deutschland?</h1>
+      <p class="lead">Migration ist ein Triggerpunkt: Bei diesem Thema kochen Gefühle schnell hoch. Ein Satz sorgt seit 2010 immer wieder für Streit. Wir stellen beide Seiten nebeneinander – Stellung beziehst du selbst.</p>
+
+      <div class="debate">
+        <article class="side">
+          <blockquote class="claim">
+            <p>„Der Islam gehört inzwischen auch zu Deutschland.“</p>
+            <footer>Christian Wulff, Bundespräsident, 3. Oktober 2010. Ähnlich äußerte sich Bundeskanzlerin Angela Merkel 2015 und 2018.</footer>
+          </blockquote>
+          <h2>So argumentiert diese Seite</h2>
+          <ul class="args">
+            <li>Rund 5,5 Millionen Musliminnen und Muslime leben in Deutschland, fast die Hälfte hat einen deutschen Pass. Viele sind hier geboren.</li>
+            <li>Das Grundgesetz schützt die Religionsfreiheit für alle (Artikel 4) und verbietet Benachteiligung wegen des Glaubens (Artikel 3).</li>
+            <li>Religion und Gläubige lassen sich rechtlich nicht trennen: Wer sagt, die Muslime gehören dazu, ihr Glaube aber nicht, widerspricht sich – so argumentiert zum Beispiel der Kirchenrechtler Hans Michael Heinig.</li>
+          </ul>
+        </article>
+        <article class="side">
+          <blockquote class="claim">
+            <p>„Der Islam gehört nicht zu Deutschland.“</p>
+            <footer>Grundsatzprogramm der AfD (2016). Ähnlich äußerte sich Bundesinnenminister Horst Seehofer (CSU) 2018.</footer>
+          </blockquote>
+          <h2>So argumentiert diese Seite</h2>
+          <ul class="args">
+            <li>Deutschland sei historisch und kulturell durch Christentum und Judentum geprägt, nicht durch den Islam (Seehofer 2018).</li>
+            <li>Die AfD verbindet den Satz mit der Sorge, islamische Glaubenspraxis könne mit der freiheitlich-demokratischen Grundordnung, der Rechtsordnung oder einer deutschen Leitkultur in Konflikt geraten.</li>
+            <li>Unterschieden wird zwischen Muslimen, die rechtstreu und integriert leben, und dem Islam als Religion und Ordnungsvorstellung. Seehofer betonte, die hier lebenden Muslime gehörten „selbstverständlich“ zu Deutschland.</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="law">
+        <h2>Was das Grundgesetz sagt</h2>
+        <blockquote class="law-quote"><p>„Die Freiheit des Glaubens, des Gewissens und die Freiheit des religiösen und weltanschaulichen Bekenntnisses sind unverletzlich. Die ungestörte Religionsausübung wird gewährleistet.“</p><footer>Artikel 4 Absatz 1 und 2</footer></blockquote>
+        <p>Gleichzeitig darf und muss der Staat gegen Extremismus, Gewalt und Demokratiefeindlichkeit vorgehen – egal, von wem sie ausgehen.</p>
+      </aside>
+
+      <p class="kernfrage">Die eigentliche Frage ist größer: Wie verbinden wir Zugehörigkeit, Vielfalt, Religionsfreiheit und gemeinsame Regeln so, dass niemand pauschal ausgegrenzt wird?</p>
+      <p class="fineprint">Gut zu wissen: Migration und Islam sind nicht dasselbe. Nicht alle Zugewanderten sind muslimisch, und viele Musliminnen und Muslime sind in Deutschland geboren.</p>
+
+      <form id="form-streit" class="form" novalidate>
+        <fieldset class="field">
+          <legend>Und du? Gehört der Islam zu Deutschland?</legend>
+          <div class="options options--scale" data-radio="streitfrage"></div>
+        </fieldset>
+        <button type="submit" class="btn btn--primary">Stellung beziehen</button>
+      </form>
+      <div id="streit-result" class="result-block" aria-live="polite"></div>
+    </section>
+
+    <!-- ===================== 6 Chancen, Probleme, Verantwortung ===================== -->
+    <section class="page" id="abwaegen" aria-labelledby="t-abwaegen" hidden>
+      <h1 id="t-abwaegen" class="title" tabindex="-1">Chancen, Probleme, Verantwortung</h1>
+      <p class="lead">Migration ist weder nur Gewinn noch nur Belastung. Wer mitreden will, muss beides kennen – und fragen, wer was tun kann.</p>
+
+      <section class="sortgame js-only" aria-labelledby="t-sort">
+        <h2 id="t-sort">Chance, Problem – oder beides?</h2>
+        <p>Sechs Fakten. Wie würdest du sie einordnen? Es gibt kein Richtig oder Falsch – danach siehst du, wie wir es sehen und warum.</p>
+        <div id="sort"></div>
+      </section>
+
+      <h2 class="weigh__title" id="weigh-title" tabindex="-1">Alle drei Blickwinkel</h2>
+      <div class="tabs js-only" role="tablist" aria-label="Blickwinkel">
+        <button role="tab" id="tab-chancen" aria-controls="panel-chancen" aria-selected="true">Chancen</button>
+        <button role="tab" id="tab-probleme" aria-controls="panel-probleme" aria-selected="false" tabindex="-1">Probleme</button>
+        <button role="tab" id="tab-verantwortung" aria-controls="panel-verantwortung" aria-selected="false" tabindex="-1">Verantwortung</button>
+      </div>
+
+      <div class="weigh">
+        <section class="panel panel--chance is-active" id="panel-chancen" role="tabpanel" aria-labelledby="tab-chancen">
+          <h2 class="panel__title"><span class="ink-label ink-label--chance">Chancen</span></h2>
+          <article class="item" data-term-view="demografie">
+            <h3>Fachkräfte für eine alternde Gesellschaft</h3>
+            <p>Ohne Zuwanderung sinkt die Zahl der Arbeitskräfte bis 2040 um rund 10 %. Menschen mit Einwanderungsgeschichte sind im Schnitt neun Jahre jünger als der Rest der Bevölkerung.</p>
+            <p class="concept"><strong>Unterricht:</strong> demografischer Wandel</p>
+            <p class="source">Bertelsmann Stiftung/IAB 2024; Destatis 2026</p>
+          </article>
+          <article class="item">
+            <h3>Pflege, die ohne Zuwanderung nicht liefe</h3>
+            <p>Jede fünfte Pflegekraft hat einen ausländischen Pass. Seit 2022 wächst die Pflege nur noch durch ausländische Beschäftigte.</p>
+            <p class="source">Bundesagentur für Arbeit 2026</p>
+          </article>
+          <article class="item" data-term-view="bildungsungleichheit">
+            <h3>Mut zum Bildungsaufstieg</h3>
+            <p>Migrantische Eltern trauen ihren Kindern in der Schullaufbahn eher mehr zu. Wer migriert, geht ein Risiko ein – dieser Mut zeigt sich oft auch bei den Bildungszielen für die Kinder.</p>
+            <p class="concept"><strong>Unterricht:</strong> Bildungsungleichheit (Aladin El-Mafaalani)</p>
+          </article>
+          <article class="item" data-term-view="solidaritaet">
+            <h3>Unterschiede halten zusammen</h3>
+            <p>In einer arbeitsteiligen Gesellschaft hält gerade die Verschiedenheit zusammen: Jeder braucht die Fähigkeiten der anderen.</p>
+            <p class="concept"><strong>Unterricht:</strong> organische Solidarität (Émile Durkheim)</p>
+          </article>
+          <article class="item">
+            <h3>Viele Sprachen an einer Schule</h3>
+            <p data-live="sprachen">Mehrsprachigkeit ist ein Schatz für Ausbildung und Beruf. Wie viele Sprachen am HHBK gesprochen werden, zählen wir in der Umfrage.</p>
+          </article>
+        </section>
+
+        <section class="panel panel--problem" id="panel-probleme" role="tabpanel" aria-labelledby="tab-probleme">
+          <h2 class="panel__title"><span class="ink-label ink-label--problem">Probleme</span></h2>
+          <article class="item" data-term-view="kapital">
+            <h3>Abschlüsse, die nicht zählen</h3>
+            <p>Viele Zugewanderte müssen Abschlüsse erst anerkennen lassen. Ausländische Pflegekräfte arbeiten häufig auf Helferniveau, obwohl sie mehr können. Ihr kulturelles Kapital verliert an der Grenze seinen Wert.</p>
+            <p class="concept"><strong>Unterricht:</strong> Kapitalsorten (Pierre Bourdieu)</p>
+            <p class="source">bpb-Kurzdossier Pflege; Arbeitsblatt Migration</p>
+          </article>
+          <article class="item">
+            <h3>Sprache als Hürde</h3>
+            <p data-live="barriere-sprache">Wer die Sprache noch nicht kann, verliert in Schule und Ausbildung schnell den Anschluss – nicht wegen fehlenden Könnens.</p>
+          </article>
+          <article class="item" data-term-view="soziale_schliessung sanktionen">
+            <h3>Diskriminierung und Ausgrenzung</h3>
+            <p>Vorurteile, Benachteiligung bei Wohnung oder Job, Ausgrenzung im Alltag: Das alles sind negative Sanktionen, die Integration ausbremsen.</p>
+            <p class="concept"><strong>Unterricht:</strong> soziale Schließung, Sanktionen</p>
+          </article>
+          <article class="item">
+            <h3>Überlastete Orte</h3>
+            <p>Wenn Wohnraum knapp ist und Schulen oder Ämter zu wenig Personal haben, fühlen sich viele Menschen allein gelassen. Daraus entstehen Konflikte, die nicht nur mit Migration zu tun haben, sondern mit sozialer Gerechtigkeit.</p>
+            <p class="source">Arbeitsblatt „Migration – ein ewiges Streitthema?“</p>
+          </article>
+          <article class="item" data-term-view="triggerpunkte sozialisation">
+            <h3>Gefühl schlägt Fakten</h3>
+            <p>Der Anteil von Musliminnen und Muslimen wird in Deutschland mehr als dreimal so hoch geschätzt, wie er ist. Wer falsche Zahlen im Kopf hat, streitet über ein anderes Land.</p>
+            <p class="concept"><strong>Unterricht:</strong> Triggerpunkte (Steffen Mau), Medien als Sozialisationsinstanz</p>
+            <p class="source">Ipsos 2018; BAMF 2021</p>
+          </article>
+        </section>
+
+        <section class="panel panel--duty" id="panel-verantwortung" role="tabpanel" aria-labelledby="tab-verantwortung">
+          <h2 class="panel__title"><span class="ink-label ink-label--duty">Verantwortung</span></h2>
+          <article class="item">
+            <h3>Wer neu ist</h3>
+            <p>Die Sprache lernen, die demokratische und rechtliche Ordnung respektieren, Angebote annehmen.</p>
+          </article>
+          <article class="item">
+            <h3>Staat und Politik</h3>
+            <p>Faire Chancen schaffen: Abschlüsse schneller anerkennen, Sprachkurse sichern, Schulen und Kommunen ausreichend ausstatten.</p>
+          </article>
+          <article class="item" data-term-view="habitus">
+            <h3>Unsere Schule</h3>
+            <p>Kontakt organisieren. Von allein bleiben Gruppen meistens unter sich – deshalb braucht es Angebote, bei denen sich Neue und Alteingesessene wirklich begegnen.</p>
+            <p class="concept"><strong>Unterricht:</strong> Habitus („gleich und gleich gesellt sich gern“)</p>
+          </article>
+          <article class="item" data-term-view="integration">
+            <h3>Wir alle</h3>
+            <p>Niemanden pauschal ausgrenzen, nachfragen statt urteilen, Zahlen prüfen. Integration ist ein wechselseitiger Prozess – beide Seiten bewegen sich.</p>
+            <p class="concept"><strong>Unterricht:</strong> historische Verantwortung, Grundgesetz Artikel 3</p>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <!-- ===================== 7 Lösung: Sprachpaten ===================== -->
+    <section class="page" id="loesung" aria-labelledby="t-loesung" hidden>
+      <h1 id="t-loesung" class="title" tabindex="-1">Unsere Lösung: Sprachpaten am HHBK</h1>
+      <p class="lead">Neue Schülerinnen und Schüler mit wenig Deutsch bekommen für ihre ersten acht Wochen eine Sprachpatin oder einen Sprachpaten: jemanden aus einer höheren Klasse, der ihre Sprache und Deutsch spricht.</p>
+
+      <div class="proposal">
+        <section>
+          <h2>Warum gerade das?</h2>
+          <ul class="reasons">
+            <li data-term-view="kontakthypothese"><strong>Kontakt baut Vorurteile ab</strong> – wenn er auf Augenhöhe passiert und ein gemeinsames Ziel hat. So beschreibt es die Kontakthypothese des Psychologen Gordon Allport (1954).</li>
+            <li data-term-view="habitus"><strong>Von allein mischt sich wenig.</strong> „Gleich und gleich gesellt sich gern“: Freundeskreise sind meistens sehr ähnlich. Begegnung muss man organisieren.</li>
+            <li data-term-view="kapital"><strong>Eine Patenschaft ist soziales Kapital.</strong> Wer jemanden kennt, findet sich schneller zurecht – vom Raumplan bis zur sonstigen Mitarbeit.</li>
+            <li class="reasons__data" data-survey="beleg"></li>
+            <li data-live="loesung-daten" hidden></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>So läuft es ab</h2>
+          <ol class="steps">
+            <li><strong>Anmelden.</strong> Auf unserer Sprachpaten-Seite: als Patin oder Pate oder als jemand, der Unterstützung möchte.</li>
+            <li><strong>Zusammenbringen.</strong> Die SV und eine Ansprechperson im Kollegium bilden Paare nach Sprachen und Klassen.</li>
+            <li><strong>Loslegen.</strong> Kennenlernen in der ersten Schulwoche, danach acht Wochen lang ein Treffen pro Woche, je 30 Minuten.</li>
+            <li><strong>Auswerten.</strong> Nach acht Wochen stellen wir dieselbe Akzeptanz-Frage wie in dieser App. So sehen wir, ob die Neuen besser angekommen sind. <span data-survey="basis"></span></li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Was wir dafür brauchen</h2>
+          <p>Die Unterstützung der SV, eine Ansprechperson im Kollegium und einen Raum für die Treffen. Kosten: keine.</p>
+        </section>
+      </div>
+
+      <div class="cta-card">
+        <p class="kicker">Mitmachen</p>
+        <h2>Anmelden dauert eine Minute</h2>
+        <p>Auf unserer eigenen Sprachpaten-Seite – für beide Seiten: wer helfen will und wer Unterstützung möchte.</p>
+        <div class="actions">
+          <a class="btn btn--gold" href="#/sprachpaten?r=helfen" data-cta-loesung>Ich will helfen</a>
+          <a class="btn btn--cream" href="#/sprachpaten?r=suchen" data-cta-loesung>Ich brauche Unterstützung</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8 Ergebnisse ===================== -->
+    <section class="page" id="ergebnisse" aria-labelledby="t-ergebnisse" hidden>
+      <h1 id="t-ergebnisse" class="title" tabindex="-1">Was das HHBK denkt</h1>
+
+      <form id="form-nachher" class="form nachher" novalidate>
+        <p class="lead">Zwei letzte Fragen, dann siehst du alle Ergebnisse – und holst dir den Stempel für diese Station.</p>
+        <fieldset class="field">
+          <legend>Wie gut kennst du dich jetzt mit dem Thema Migration aus?</legend>
+          <div class="kreuz" data-kreuz="wissen_nachher" data-low="kaum" data-high="sehr gut"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Hat der Rundgang deine Sicht verändert?</legend>
+          <div class="options options--inline" data-radio="sicht"></div>
+        </fieldset>
+        <p class="form-error" role="alert"></p>
+        <div class="formnav">
+          <button type="submit" class="btn btn--primary">Abschicken und Ergebnisse ansehen</button>
+          <button type="button" class="btn btn--quiet" data-skip-nachher>Nur Ergebnisse ansehen</button>
+        </div>
+      </form>
+
+      <section class="survey" id="survey" aria-labelledby="t-survey">
+        <p class="kicker">Unsere Umfrage</p>
+        <h2 id="t-survey" class="survey__title">27 Stimmen aus dem HHBK</h2>
+        <p class="survey__meta" id="survey-meta"></p>
+        <div id="survey-body"></div>
+        <noscript><p>Die Auswertung unserer Umfrage braucht JavaScript.</p></noscript>
+      </section>
+
+      <h2 class="results__title">Live aus dieser App</h2>
+      <div id="results" class="results" aria-live="polite"></div>
+
+      <div class="cta-card">
+        <p class="kicker">Und jetzt?</p>
+        <h2>Mach aus Zahlen etwas, das hilft</h2>
+        <p>Werde Sprachpatin oder Sprachpate – oder hol dir Unterstützung, wenn du neu bist. Und teil den Link, damit mehr vom HHBK mitmachen.</p>
+        <div class="actions">
+          <a class="btn btn--gold" href="#/sprachpaten">Zu den Sprachpaten</a>
+          <button type="button" class="btn btn--cream js-only" data-share>Link teilen</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Mein Pass ===================== -->
+    <section class="page page--pass" id="pass" aria-labelledby="t-pass" hidden>
+      <p class="visa"><span class="visa__no">Visa · Stempel · Cachets</span></p>
+      <h1 id="t-pass" class="title" tabindex="-1">Mein Pass</h1>
+      <p class="lead" id="pass-lead"></p>
+
+      <div class="stampcard-wrap">
+        <div class="stampcard-wrap__head"><h2>Stempelkarte</h2><p id="pass-count"></p></div>
+        <ol class="stampcard" id="stampcard"></ol>
+      </div>
+      <p class="passcard__status" id="pass-status"></p>
+      <div class="actions" id="pass-actions"></div>
+
+      <h2>Dein Bauchgefühl</h2>
+      <div id="pass-gut"></div>
+
+      <h2>Sprachpaten</h2>
+      <div id="pass-sp"></div>
+
+      <h2 id="t-terms">Deine Fachbegriffe <span class="count" id="terms-count"></span></h2>
+      <p class="muted">Jeder Begriff kommt aus unserem GL-Unterricht. Du sammelst ihn, wenn er dir im Rundgang begegnet.</p>
+      <ul class="terms" id="terms" aria-labelledby="t-terms"></ul>
+
+      <h2>Teilen</h2>
+      <p>Wie weit liegen deine Freundinnen und Freunde daneben? Schick ihnen den Link – anonym, ohne Anmeldung.</p>
+      <div class="actions"><button type="button" class="btn btn--line js-only" data-share>Link teilen</button><a class="btn btn--quiet" href="#/projekt">Über das Projekt</a></div>
+      <noscript><p>Der Pass braucht JavaScript, weil er deine Stempel nur in deinem Browser speichert.</p></noscript>
+    </section>
+
+    <!-- ===================== Sprachpaten (eigene Seite, keine Station) ===================== -->
+    <section class="page" id="sprachpaten" aria-labelledby="t-sp" hidden>
+      <div class="sp-hero">
+        <p class="kicker">Unsere nachhaltige Lösung</p>
+        <h1 id="t-sp" class="title" tabindex="-1">Sprachpaten am HHBK</h1>
+        <p class="lead">Neu am HHBK und noch wenig Deutsch? Oder du sprichst Deutsch und eine weitere Sprache? Wir bringen euch zusammen: acht Wochen, eine halbe Stunde pro Woche.</p>
+        <div class="welcome" role="group" aria-label="Willkommen in vielen Sprachen">
+          <div class="welcome__track" id="welcome-track"></div>
+        </div>
+      </div>
+
+      <div class="roles">
+        <a class="role role--helfen" href="#/sprachpaten?r=helfen" data-role="helfen">
+          <svg class="role__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M5 9h21a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4H15l-6 5v-5H5a4 4 0 0 1-4-4v-9a4 4 0 0 1 4-4z" fill="#fff" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M34 17h9a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4h-3v5l-6-5h-8a4 4 0 0 1-4-4v-1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M8 15.5h14M8 20h9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="role__kicker">Ich will helfen</span>
+          <span class="role__title">Sprachpatin oder Sprachpate werden</span>
+          <span class="role__text">Du sprichst Deutsch und mindestens eine weitere Sprache? Zeig jemandem die ersten acht Wochen am HHBK. Du übst Erklären und Verantwortung – das kannst du auch in Bewerbungen nennen.</span>
+          <span class="role__cta">Als Patin oder Pate anmelden <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="role role--suchen" href="#/sprachpaten?r=suchen" data-role="suchen">
+          <svg class="role__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="19" fill="#fff" stroke="currentColor" stroke-width="2.2"/><path d="M24 9v4M24 35v4M9 24h4M35 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M30.5 17.5 L26.5 26.5 L17.5 30.5 L21.5 21.5 Z" fill="currentColor"/><circle cx="24" cy="24" r="2" fill="#fff"/></svg>
+          <span class="role__kicker">Ich bin neu</span>
+          <span class="role__title">Unterstützung bekommen</span>
+          <span class="role__text">Jemand, der deine Sprache spricht, zeigt dir Räume, Regeln und die Mensa – und erklärt dir, was „sonstige Mitarbeit“ heißt.</span>
+          <span class="role__cta">Unterstützung anfragen <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+      <p class="sp-proof" id="sp-proof">Das Programm startet gerade – sei unter den Ersten.</p>
+
+      <div class="signup" id="sp-signup">
+        <form id="form-pate" class="form signup__form stepper" novalidate>
+          <h2 id="sp-form-title" tabindex="-1">Anmelden – dauert eine Minute</h2>
+          <div class="stepper__head js-only" aria-hidden="true"><span class="stepper__count">Schritt 1 von 3</span><span class="stepper__bar"><span></span></span></div>
+
+          <div class="step">
+            <fieldset class="field">
+              <legend>Ich möchte …</legend>
+              <div class="options">
+                <label class="option"><input type="radio" name="rolle" value="helfen"><span class="box" aria-hidden="true"></span><span>Sprachpatin oder Sprachpate werden</span></label>
+                <label class="option"><input type="radio" name="rolle" value="suchen"><span class="box" aria-hidden="true"></span><span>Unterstützung bekommen</span></label>
+              </div>
+            </fieldset>
+            <div class="field field--row">
+              <label class="textfield"><span>Vorname</span><input type="text" name="vorname" maxlength="30" autocomplete="given-name" required></label>
+              <label class="textfield textfield--short"><span>Klasse</span><input type="text" name="klasse" maxlength="12" autocomplete="off" placeholder="z. B. AIA31" required></label>
+            </div>
+          </div>
+
+          <fieldset class="field step">
+            <legend>Welche Sprachen sprichst du?</legend>
+            <p class="field__hint">Alle, die du im Alltag nutzt – auch Deutsch. So finden wir die passende Person für dich.</p>
+            <div class="chips" data-langs="pate_sprachen"></div>
+            <button type="button" class="linkbtn" data-more-langs aria-expanded="false">Mehr Sprachen zeigen</button>
+          </fieldset>
+
+          <div class="step">
+            <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <label class="option option--check"><input type="checkbox" name="einwilligung"><span class="box" aria-hidden="true"></span><span>Ich bin einverstanden, dass die Projektgruppe meinen Vornamen, meine Klasse und meine Sprachen speichert, um mich für das Sprachpaten-Programm anzusprechen. Ich kann das jederzeit per E-Mail an <span class="nowrap" data-contact>migration.hhbk@gmail.com</span> widerrufen.</span></label>
+            <label class="option option--check"><input type="checkbox" name="alter"><span class="box" aria-hidden="true"></span><span>Ich bin mindestens 16 Jahre alt oder meine Eltern sind einverstanden.</span></label>
+          </div>
+
+          <p class="form-error" role="alert"></p>
+          <div class="formnav">
+            <button type="button" class="btn btn--quiet js-only" data-step-back hidden>Zurück</button>
+            <button type="button" class="btn btn--primary js-only" data-step-next>Weiter</button>
+            <button type="submit" class="btn btn--primary" data-step-submit>Anmelden</button>
+          </div>
+          <p class="fineprint">Unser Vorschlag an Schulleitung und SV. Die Anmeldungen nutzen wir erst, wenn das Programm startet.</p>
+        </form>
+
+        <div class="ausweis-wrap">
+          <div class="ausweis" id="ausweis" aria-hidden="true">
+            <div class="ausweis__head">
+              <span>Sprachpaten am HHBK</span>
+              <span class="ausweis__role" id="ausweis-role">Patin oder Pate</span>
+            </div>
+            <div class="ausweis__body">
+              <div class="ausweis__photo"><svg viewBox="0 0 60 72"><circle cx="30" cy="26" r="13"/><path d="M6 70c2-14 12-22 24-22s22 8 24 22"/></svg></div>
+              <dl class="ausweis__data">
+                <div><dt>Vorname</dt><dd class="hand" id="ausweis-name">…</dd></div>
+                <div><dt>Klasse</dt><dd class="hand" id="ausweis-klasse">…</dd></div>
+                <div><dt>Spricht</dt><dd class="hand" id="ausweis-sprachen">…</dd></div>
+              </dl>
+            </div>
+            <div class="ausweis__foot"><span>Schuljahr 2026/27</span></div>
+            <div class="ausweis__stamp" id="ausweis-stamp"></div>
+          </div>
+          <p class="ausweis__note" id="ausweis-note">Dein Ausweis füllt sich, während du tippst.</p>
+        </div>
+      </div>
+
+      <h2>So läuft es ab</h2>
+      <ol class="how">
+        <li><strong>Anmelden</strong>Hier, in einer Minute – als Patin, Pate oder als neue Schülerin, neuer Schüler.</li>
+        <li><strong>Zusammenbringen</strong>Die SV und eine Ansprechperson im Kollegium bilden Paare nach Sprachen und Klassen.</li>
+        <li><strong>Loslegen</strong>Kennenlernen in der ersten Woche, dann acht Wochen lang ein Treffen pro Woche, je 30 Minuten.</li>
+        <li><strong>Auswerten</strong>Nach acht Wochen fragen wir erneut, wie akzeptiert sich die Neuen fühlen.</li>
+      </ol>
+
+      <h2>Warum das wirkt</h2>
+      <ul class="reasons">
+        <li data-term-view="kontakthypothese"><strong>Kontakt baut Vorurteile ab</strong> – auf Augenhöhe und mit einem gemeinsamen Ziel. Das ist die Kontakthypothese von Gordon Allport (1954).</li>
+        <li data-term-view="habitus"><strong>Von allein mischt sich wenig.</strong> „Gleich und gleich gesellt sich gern“ – Begegnung muss man organisieren.</li>
+        <li data-term-view="kapital"><strong>Eine Patenschaft ist soziales Kapital.</strong> Wer jemanden kennt, findet sich schneller zurecht.</li>
+        <li class="reasons__data" data-survey="beleg"></li>
+        <li data-live="sp-daten" hidden></li>
+      </ul>
+      <figure class="voice" data-voice="0"></figure>
+
+      <h2>Häufige Fragen</h2>
+      <div class="faq">
+        <details><summary>Muss ich perfekt Deutsch können, um zu helfen?</summary><p>Nein. Du solltest den Schulalltag auf Deutsch gut erklären können und eine weitere Sprache sprechen – das reicht.</p></details>
+        <details><summary>Wie viel Zeit kostet das?</summary><p>Ein Kennenlernen in der ersten Woche, danach acht Wochen lang ein Treffen pro Woche, je etwa 30 Minuten.</p></details>
+        <details><summary>Was kostet das?</summary><p>Nichts. Gebraucht werden nur die SV, eine Ansprechperson im Kollegium und ein Raum für die Treffen.</p></details>
+        <details><summary>Wann geht es los?</summary><p>Das Sprachpaten-Programm ist unser Vorschlag an Schulleitung und SV. Sobald es startet, melden wir uns über deine Klasse.</p></details>
+        <details><summary>Was passiert mit meinen Daten?</summary><p>Wir speichern nur Vorname, Klasse und Sprachen – mit deiner Einwilligung – in einer Tabelle des Projektkontos. Löschen oder Fragen: <span class="nowrap" data-contact>migration.hhbk@gmail.com</span>.</p></details>
+        <details><summary>Meine Sprache steht nicht in der Liste.</summary><p>Tipp auf „Mehr Sprachen zeigen“ – dort stehen 30 Sprachen. Fehlt deine trotzdem, wähl die übrigen aus und schreib uns kurz eine E-Mail.</p></details>
+      </div>
+
+      <div class="cta-card">
+        <p class="kicker">Lieber erst mal schauen?</p>
+        <h2>Mach den Rundgang</h2>
+        <p>8 Stationen, ca. 8 Minuten: Schätz Zahlen, erleb einen Schulmorgen ohne Deutsch und sieh, warum wir genau diese Lösung vorschlagen.</p>
+        <div class="actions"><a class="btn btn--gold" href="#/du" id="sp-tour">Rundgang starten</a></div>
+      </div>
+    </section>
+
+    <!-- ===================== Über das Projekt ===================== -->
+    <section class="page" id="projekt" aria-labelledby="t-projekt" hidden>
+      <h1 id="t-projekt" class="title" tabindex="-1">Über das Projekt</h1>
+      <p class="lead">Ein Projekt von Bavin, Abdalaziz und Eren aus der Klasse AIA31 am Heinrich-Hertz-Berufskolleg Düsseldorf, entstanden im Fach Gesellschaftslehre mit Geschichte.</p>
+
+      <h2>Was soll das HHBK nach unserem Projekt besser wissen, verstehen oder diskutieren können?</h2>
+      <dl class="answers">
+        <div><dt>Besser wissen</dt><dd>Echte Zahlen statt Bauchgefühl – und wie weit beides am HHBK auseinanderliegt.</dd></div>
+        <div><dt>Besser verstehen</dt><dd>Wie sich ein Schulstart in einer fremden Sprache anfühlt und was ihn leichter macht.</dd></div>
+        <div><dt>Anders diskutieren</dt><dd>Eine Streitfrage mit beiden Seiten und dem Grundgesetz, statt mit Schlagworten.</dd></div>
+      </dl>
+
+      <h2>So erfüllt das Projekt die Kriterien</h2>
+      <div class="table-scroll">
+        <table class="criteria">
+          <thead><tr><th scope="col">Kriterium</th><th scope="col">Unsere Umsetzung</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Klarer Schwerpunkt</th><td>Leitfrage „Was wissen wir am HHBK wirklich über Migration – und was glauben wir nur?“ – steht auf dem Deckblatt und zieht sich durch alle Stationen.</td></tr>
+            <tr><th scope="row">Fachlich fundiert, Bezug zum Unterricht</th><td>Offizielle Zahlen mit Quellen (Destatis, Bundesagentur für Arbeit, BAMF, IT.NRW, Stadt Düsseldorf) und 18 Fachbegriffe aus unseren Unterrichtseinheiten, die man im Pass sammelt: Konformität, Normen, Sanktionen, Habitus, Kapitalsorten, organische Solidarität, soziale Schließung, Volksgemeinschaft, Pluralismus, Triggerpunkte, Push- und Pull-Faktoren, demografischer Wandel, Integration und weitere.</td></tr>
+            <tr><th scope="row">Bezug zur Schule</th><td>Eigene Umfrage mit 27 Schülerinnen und Schülern des HHBK (Google Forms, November 2026) und eine Live-Umfrage in der App, Szenen aus dem Schulalltag und eine Lösung für unsere Schule mit eigener Anmeldeseite.</td></tr>
+            <tr><th scope="row">Nachhaltiger Mehrwert</th><td>Die Sprachpaten-Seite funktioniert auch ohne den Rundgang: Wer helfen will und wer Hilfe sucht, meldet sich direkt an. Das Programm kann an die SV übergeben werden. Die App bleibt online und sammelt weiter Daten.</td></tr>
+            <tr><th scope="row">Erkennbare Zielgruppe</th><td>Schülerinnen, Schüler und Lehrkräfte des HHBK. Die Sprachpaten-Seite spricht zwei Gruppen direkt an: Neue mit wenig Deutsch und mehrsprachige Schülerinnen und Schüler, die helfen wollen.</td></tr>
+            <tr><th scope="row">Konkretes Produkt</th><td>Installierbare Web-App mit Stempelpass, Live-Umfrage und Sprachpaten-Anmeldung, ein Flyer im Reisepass-Format mit QR-Code und ein ausgearbeitetes Sprachpaten-Konzept.</td></tr>
+            <tr><th scope="row">Chancen, Probleme, Verantwortung</th><td>Eigene Station mit Einordnungsspiel („Chance, Problem oder beides?“) und allen drei Blickwinkeln, dazu eine Streitfrage mit beiden Positionen.</td></tr>
+            <tr><th scope="row">Begründete Handlungsempfehlung</th><td>Sprachpaten am HHBK, begründet mit Theorie (Allport, Habitus, Bourdieu) und unserer Umfrage: Die Hälfte nennt Sprache als Barriere, und mehr als die Hälfte aus Gruppe 2 sagt, dass sich ihre Vorurteile nach dem Kontakt verändert haben. Mit eingebauter Erfolgsmessung.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Wie wir den Erfolg messen</h2>
+      <p>Wer mitmacht, schätzt seinen Wissensstand am Anfang und am Ende. Die Differenz zeigt, ob der Rundgang etwas bewirkt. Nach acht Wochen Sprachpaten stellen wir die Akzeptanz-Frage erneut. <span data-survey="basis"></span></p>
+
+      <h2>Warum die App wie ein Spiel aufgebaut ist</h2>
+      <p>Lange Umfragen bricht man schnell ab. Deshalb nutzen wir Erkenntnisse aus der Psychologie – aber ehrlich:</p>
+      <ul class="plain">
+        <li><strong>Der erste Stempel ist schon drin.</strong> Wer sieht, dass er schon angefangen hat, macht eher weiter (Endowed-Progress-Effekt).</li>
+        <li><strong>Kleine Schritte.</strong> Eine Frage nach der anderen, jede Station dauert ein bis zwei Minuten.</li>
+        <li><strong>Erst geben, dann fragen.</strong> Du bekommst Zahlen, Begriffe und dein Ergebnis, bevor wir dich um eine Anmeldung bitten – das Prinzip der Gegenseitigkeit nach dem Psychologen Robert Cialdini.</li>
+        <li><strong>Echte Zahlen statt Druck.</strong> Wie viele mitmachen, zeigen wir nur, wenn es wirklich stimmt – ab fünf Antworten. Keine erfundenen Zähler, keine künstliche Verknappung, keine vorab gesetzten Häkchen.</li>
+        <li><strong>Rücksicht.</strong> Wer auf seinem Gerät „Bewegung reduzieren“ eingestellt hat, sieht keine Animationen.</li>
+      </ul>
+
+      <h2>Grenzen unserer Umfrage</h2>
+      <ul class="plain">
+        <li>Beide Umfragen sind nicht repräsentativ: Es macht mit, wer den Link bekommt und Lust hat. Unsere Google-Forms-Umfrage hat 27 Antworten – das reicht für Tendenzen, nicht für sichere Aussagen über das ganze HHBK.</li>
+        <li>Wer die App neu öffnet oder ein anderes Gerät nutzt, kann mehrfach teilnehmen.</li>
+        <li>Statistikämter zählen unterschiedlich („Einwanderungsgeschichte“, „Migrationshintergrund“, „Zuwanderungsgeschichte“). Wir nennen bei jeder Zahl die Definition.</li>
+      </ul>
+
+      <h2>Datenschutz</h2>
+      <p>Die Umfrage ist anonym. Wir speichern keine Namen, E-Mail-Adressen oder IP-Adressen in unserer Tabelle, nur deine Antworten und eine zufällige Nummer, damit Antworten aus derselben Sitzung zusammenbleiben. Gruppen mit weniger als fünf Antworten zeigen wir nicht an. Dein Stempelpass und deine gesammelten Begriffe liegen nur in deinem Browser. Bei der Sprachpaten-Anmeldung speichern wir nur Vorname, Klasse und Sprachen – mit deiner Einwilligung. Die Daten liegen in einer Google-Tabelle des Projektkontos. Löschung oder Fragen: <span class="nowrap" data-contact>migration.hhbk@gmail.com</span>. Die Schriften liegen auf unserem eigenen Server, es werden keine Tracker geladen.</p>
+
+      <h2>Teilen</h2>
+      <div class="share">
+        <img src="img/qr.svg" width="148" height="148" alt="QR-Code zur App: scan.page/pkVd2p">
+        <div>
+          <p class="share__url">scan.page/pkVd2p</p>
+          <button type="button" class="btn btn--line js-only" data-share>Link teilen</button>
+          <p class="fineprint">Auf dem Handy kannst du die App über „Zum Startbildschirm hinzufügen“ wie eine normale App installieren. Zu den Sprachpaten geht es jederzeit oben über „Sprachpaten“.</p>
+        </div>
+      </div>
+
+      <h2>Quellen</h2>
+      <ol class="sources" id="sources"></ol>
+
+      <h2>Impressum</h2>
+      <p>Schulprojekt von Bavin, Abdalaziz und Eren, Klasse AIA31, Heinrich-Hertz-Berufskolleg Düsseldorf, Schuljahr 2026/27. Kein offizielles Angebot der Schule. Kontakt: <span class="nowrap" data-contact>migration.hhbk@gmail.com</span>.</p>
+      <p class="fineprint">Schriften: Archivo, Atkinson Hyperlegible Next und Shantell Sans, alle unter der SIL Open Font License 1.1.</p>
+
+      <div class="mrz" aria-hidden="true"><span>P&lt;HHBKGEFUEHLT&lt;&lt;ECHT&lt;MIGRATION&lt;AM&lt;HHBK&lt;&lt;&lt;&lt;&lt;&lt;</span><span>AIA31&lt;&lt;&lt;&lt;&lt;2026DUS&lt;BAVIN&lt;ABDALAZIZ&lt;EREN&lt;&lt;&lt;&lt;&lt;&lt;</span></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <a href="#/projekt">Über das Projekt, Quellen und Datenschutz</a>
+  </footer>
+
+  <div class="pop" id="pop" aria-hidden="true"></div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <p class="sr-only" id="announce" aria-live="polite"></p>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
