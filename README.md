@@ -3,7 +3,7 @@
 **Was wissen wir am HHBK wirklich über Migration – und was glauben wir nur?**
 
 Eine Web-App von Bavin, Abdalaziz und Eren (Klasse AIA31, Heinrich-Hertz-Berufskolleg Düsseldorf) für das Fach Gesellschaftslehre mit Geschichte.
-Adresse nach dem Hochladen: **https://migration-hhbk.github.io/**
+Adresse: **https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/**
 
 Die App ist wie ein Reisepass aufgebaut – passend zum Flyer:
 
@@ -28,23 +28,23 @@ Die Antworten landen anonym in einer Google-Tabelle. Nach außen zeigt die App n
 | `apps-script/Code.gs` | Der Code für die Datenbank (wird in Google kopiert, Schritt 2) |
 | `sw.js`, `manifest.webmanifest` | Machen die App auf dem Handy installierbar |
 | `fonts/`, `img/` | Schriften (mit Lizenz), Icons, QR-Code, Vorschaubild |
-| `sprachpaten/` | Kurzlink: leitet migration-hhbk.github.io/sprachpaten direkt zur Sprachpaten-Seite |
+| `sprachpaten/` | Kurzlink: leitet https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/sprachpaten direkt zur Sprachpaten-Seite |
 | `flyer.html` | Druckvorlage für den Flyer (zwei A5-Flyer pro A4-Blatt) |
 
 ---
 
 ## QR-Code und Umfrage (wichtig vor dem Drucken)
 
-- **QR-Code:** Flyer und Seite „Über das Projekt“ nutzen euren Code **scan.page/pkVd2p**. Stellt im scan.page-Konto als Ziel die Adresse eurer App ein – am besten mit `?flyer` am Ende (zum Beispiel `https://eure-adresse/?flyer`). Dann hat man in der App den Einreise-Stempel „Flyer gelesen“, genau wie auf dem Flyer gedruckt.
-- **Vor dem Drucken prüfen:** Läuft der Code dauerhaft kostenlos? Manche QR-Dienste schalten Codes nach einer Testphase ab – dann führt der gedruckte Flyer ins Leere.
-- **Teilen-Link:** `siteUrl` in `js/config.js` ist leer. Die App nimmt dann automatisch ihre eigene Adresse. Wenn ihr wisst, wo die App liegt, könnt ihr in `index.html` auch `og:url` und `og:image` auf diese Adresse ändern (Vorschaubild in WhatsApp).
+- **Eure Adresse:** https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/ – der Teilen-Knopf teilt immer diese Adresse (`siteUrl` in `js/config.js`), auch wenn die App woanders geöffnet wurde. Bei einer neuen Adresse: `siteUrl` hier und `og:url`/`og:image` in `index.html` ändern.
+- **QR-Code:** Flyer, Plakat und „Über das Projekt“ zeigen euren Code **scan.page/pkVd2p** (genau euer Muster). Wohin er führt, stellt ihr im scan.page-Konto ein. Ziel dort: `https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/?flyer` – dann bekommt man in der App den Einreise-Stempel „Flyer gelesen“.
+- **Vor dem Drucken:** Den QR-Code einmal mit dem Handy scannen. Er muss auf eure Seite führen, nicht auf eine andere. Achtung: Viele QR-Dienste schalten Weiterleitungs-Codes nach der kostenlosen Testphase ab. Prüft in eurem scan.page-Konto, ob der Code dauerhaft läuft.
 - **Umfrage:** Die Ergebnisse eurer Google-Forms-Umfrage (27 Antworten, 9. bis 12. November 2026) stehen zusammengefasst in `js/data.js` unter `umfrage`. Die App zeigt sie in Station 8 und nutzt sie als Beleg bei „Unsere Lösung“ und auf der Sprachpaten-Seite. Rohdaten mit Zeitstempeln und Freitext gehören **nicht** auf GitHub.
 
 ---
 
 ## Update: Die App ist schon online? (Version 2 hochladen, ca. 3 Minuten)
 
-1. Im Repository `migration-hhbk.github.io` auf **Add file** → **Upload files**.
+1. Im Repository `Gef-hlt-vs.-echt---Migration-am-HHBK` auf **Add file** → **Upload files**.
 2. Aus dem neuen Paket hineinziehen: `index.html`, `sw.js`, `manifest.webmanifest`, `README.md`, `flyer.html` und die Ordner `css`, `js`, `img`, `sprachpaten`.
    **Wichtig:** Habt ihr in `js/config.js` schon eure Datenbank-Adresse (`apiUrl`) eingetragen? Dann diese eine Datei **nicht** mit hochladen – sonst ist die Adresse wieder leer. Falls es doch passiert: Adresse einfach wieder eintragen (Schritt 3), es gehen keine Daten verloren.
 3. **Commit changes**. Nach 1 bis 2 Minuten die App öffnen und **zweimal neu laden**.
@@ -56,8 +56,8 @@ Die Antworten landen anonym in einer Google-Tabelle. Nach außen zeigt die App n
 
 1. Auf **github.com** einloggen und die Organisation **migration-hhbk** öffnen (`github.com/migration-hhbk`).
 2. Auf **Repositories** → **New repository** klicken.
-3. Bei **Repository name** genau das eintragen: `migration-hhbk.github.io`
-   (Genau dieser Name sorgt dafür, dass die App unter migration-hhbk.github.io erreichbar ist.)
+3. Bei **Repository name** den Projektnamen eintragen (bei euch: `Gef-hlt-vs.-echt---Migration-am-HHBK`).
+   (GitHub macht daraus die Adresse https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/)
 4. **Public** auswählen. Keine README, keine .gitignore, keine Lizenz anhaken. → **Create repository**.
 5. Auf der leeren Seite auf den Link **„uploading an existing file“** klicken.
 6. Den **Inhalt** dieses Ordners (nicht den Ordner selbst!) in das Feld ziehen: also `index.html`, `README.md`, `flyer.html`, `sw.js`, `manifest.webmanifest`, `.nojekyll` und die Ordner `css`, `js`, `fonts`, `img`, `apps-script`, `sprachpaten`.
@@ -67,7 +67,7 @@ Die Antworten landen anonym in einer Google-Tabelle. Nach außen zeigt die App n
 7. Unten auf **Commit changes** klicken und warten, bis alles hochgeladen ist.
 8. Oben auf **Settings** → links **Pages**.
    Bei **Build and deployment**: Source = **Deploy from a branch**, Branch = **main**, Ordner = **/ (root)** → **Save**.
-9. Nach 1 bis 3 Minuten ist die App unter **https://migration-hhbk.github.io/** online.
+9. Nach 1 bis 3 Minuten ist die App unter **https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/** online.
 
 Ohne Schritt 2 und 3 funktioniert schon alles – nur die Live-Ergebnisse und die Sprachpaten-Anmeldung sind noch aus.
 
@@ -99,7 +99,7 @@ Alles mit dem Projektkonto **migration.hhbk@gmail.com** machen.
 
 ## Schritt 3: App mit der Datenbank verbinden (ca. 2 Minuten)
 
-1. Auf GitHub im Repository `migration-hhbk.github.io` die Datei **js/config.js** öffnen.
+1. Auf GitHub im Repository `Gef-hlt-vs.-echt---Migration-am-HHBK` die Datei **js/config.js** öffnen.
 2. Rechts oben auf den **Stift** (Edit) klicken.
 3. Die kopierte URL zwischen die Anführungszeichen bei `apiUrl` einfügen:
    ```js
@@ -163,7 +163,7 @@ So läuft das Sprachpaten-Netz für die SV:
 
 | Problem | Lösung |
 |---|---|
-| Seite zeigt „404“ | Repository-Name genau `migration-hhbk.github.io`? Pages in den Settings eingeschaltet? 3 Minuten warten. |
+| Seite zeigt „404“ | Adresse genau https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/ ? Pages in den Settings eingeschaltet? 3 Minuten warten. |
 | Live-Ergebnisse erscheinen nicht | Steht die URL richtig in `js/config.js` und endet sie auf `/exec`? Zugriff bei der Bereitstellung auf **Jeder**? Die App zweimal neu laden. |
 | „Die Ergebnisse konnten nicht geladen werden“ | `…/exec?action=ping` im Browser testen. Kommt eine Google-Anmeldeseite, ist der Zugriff nicht auf **Jeder** gestellt. |
 | Änderungen am Skript wirken nicht | Neue Version bereitstellen (siehe „Inhalte ändern“). |

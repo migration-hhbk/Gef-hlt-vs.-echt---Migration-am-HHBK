@@ -4,7 +4,7 @@
  * Schriften und Bilder aus dem Zwischenspeicher. Anfragen an die Datenbank laufen nie über den Speicher.
  * Nach größeren Änderungen die Versionsnummer hochzählen.
  */
-var CACHE = "mhhbk-v3";
+var CACHE = "mhhbk-v5";
 var ASSETS = [
   "./",
   "index.html",
