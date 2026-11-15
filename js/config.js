@@ -8,8 +8,8 @@
  */
 window.MHHBK_CONFIG = {
   apiUrl: "",
-  siteUrl: "", // leer = die App nimmt ihre eigene Adresse (zum Teilen). Nur ausfüllen, wenn ihr eine feste Adresse wollt.
-  qrUrl: "https://scan.page/pkVd2p", // euer QR-Code (Flyer und Seite „Über das Projekt“)
+  siteUrl: "https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/", // eure Website: Teilen-Links zeigen immer hierhin
+  qrUrl: "https://scan.page/pkVd2p", // euer QR-Code (Flyer, Plakat, „Über das Projekt“) – Ziel im scan.page-Konto: siteUrl + ?flyer
   contact: "migration.hhbk@gmail.com",
   team: "Bavin, Abdalaziz und Eren",
   klasse: "AIA31",

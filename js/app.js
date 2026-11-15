@@ -1070,7 +1070,7 @@
     var out = $("#streit-result");
     var mine = state.answers.streitfrage;
     out.innerHTML = "";
-    out.appendChild(h("p", { class: "compare", text: "Deine Stellung: " + label(D.streitfrage, mine) + "." }));
+    out.appendChild(h("p", { class: "compare", text: "Deine Meinung: " + label(D.streitfrage, mine) + "." }));
     if (!API.enabled) {
       out.appendChild(h("p", { class: "muted", text: "Das Meinungsbild des HHBK erscheint hier, sobald die Datenbank verbunden ist." }));
       return;
@@ -1696,7 +1696,7 @@
         h("li", { text: "Fragebogen „" + U.titel + "“, " + U.werkzeug + ", " + U.zeitraum + ". Freiwillig und anonym, " + d.n + " Antworten." }),
         h("li", { text: "Die Gruppe hat jede und jeder selbst gewählt: " + G1 + ", " + G2 + "." }),
         h("li", { text: "Manche Fragen waren für eine Gruppe gedacht, wurden aber auch von der anderen beantwortet. Wir schreiben bei jeder Zahl dazu, wer gezählt ist. Gruppen mit weniger als " + MIN_N + " Antworten zeigen wir nicht." }),
-        h("li", { text: "Alle Skalenfragen gehen von 1 bis 5. Bei der Frage zum Ankommen steht im Fragebogen „1 bis 10“, angekreuzt wurden aber nur Werte von 1 bis 5 – wir werten sie deshalb wie die anderen Skalen aus." }),
+        h("li", { text: "Alle Skalen gehen von 1 bis 5. Bei der Frage zum Ankommen stand im Fragebogen „1 bis 10“. Angekreuzt wurden aber nur Werte von 1 bis 5. Deshalb werten wir sie wie die anderen Skalen aus." }),
         h("li", { text: "Zitate sind anonym, ohne Namen und sprachlich leicht geglättet. Antworten, die nichts mit der Frage zu tun hatten, zitieren wir nicht." }),
         h("li", { text: "Nicht repräsentativ: " + d.n + " Antworten zeigen Tendenzen, aber keine sicheren Aussagen über das ganze HHBK." })
       ])
@@ -1780,7 +1780,10 @@
     $$('[data-survey="beleg"]').forEach(function (li) {
       li.innerHTML = "";
       li.appendChild(h("strong", { text: "Unsere Umfrage zeigt es: " }));
-      li.appendChild(document.createTextNode(b.alle.counts[0] + " von " + b.alle.n + " Befragten nennen Kommunikation und Sprache als Barriere, bei den selbst Eingewanderten sogar " + b.g1.counts[0] + " von " + b.g1.n + ". Und " + v.counts.Ja + " von " + v.n + " aus Gruppe 2 sagen: Ihre Vorurteile haben sich nach dem Kontakt verändert. "));
+      // Keine genauen Zahlen: Die Sprach-Hürde schätzt man erst auf Seite 8
+      var mehr = v.counts.Ja * 2 > v.n ? "mehr als die Hälfte" : (v.counts.Ja * 2 === v.n ? "die Hälfte" : v.counts.Ja + " von " + v.n);
+      li.appendChild(document.createTextNode("Die größte Hürde am HHBK ist die Sprache – bei denen, die selbst eingewandert sind, sogar noch deutlicher. "
+        + "Und " + mehr + " derer, die Eingewanderte kennen, sagen: Durch den Kontakt haben sich ihre Vorurteile verändert. Wie viele es genau sind, schätzt du auf Seite 8. "));
       li.appendChild(h("a", { class: "inline-link", href: "#/ergebnisse?u=1", text: "Zur Auswertung" }));
     });
     $$('[data-survey="basis"]').forEach(function (el) { el.textContent = "Ausgangswert aus unserer Umfrage vom November 2026: im Schnitt " + CH.num(d.akzeptanz.alle.mean) + " von 5."; });
@@ -1833,7 +1836,8 @@
     Object.keys(D.terms).forEach(function (id) {
       var t = D.terms[id];
       if (state.terms[id]) {
-        list.appendChild(h("li", { class: "term" }, [h("p", { class: "term__name", text: t.name }), h("p", { class: "term__def", text: t.def })]));
+        list.appendChild(h("li", { class: "term" }, [h("p", { class: "term__name", text: t.name }), h("p", { class: "term__def", text: t.def }),
+          t.bsp ? h("p", { class: "term__bsp" }, [h("span", { class: "term__bsp-label", text: "Beispiel: " }), t.bsp]) : null]));
       } else {
         var where = stations[stationIndex(t.where)];
         list.appendChild(h("li", { class: "term is-locked" }, [
@@ -1865,7 +1869,8 @@
 
   /* =================== Teilen, Über das Projekt =================== */
   function share(text, path) {
-    var base = C.siteUrl ? C.siteUrl.replace(/\/?$/, "/") : location.origin + location.pathname.replace(/[^\/]*$/, "");
+    // Immer die öffentliche Adresse teilen – nie die Adresse einer Vorschau oder eines Testservers
+    var base = (C.siteUrl || "https://migration-hhbk.github.io/Gef-hlt-vs.-echt---Migration-am-HHBK/").replace(/\/?$/, "/");
     var url = base + (path || "");
     var data = { title: "Gefühlt vs. echt – Migration am HHBK", text: text || "Schätz mal: Wie weit liegen Gefühl und Statistik beim Thema Migration auseinander?", url: url };
     function copy() {
