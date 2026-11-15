@@ -960,6 +960,8 @@ a.cell:active { transform: scale(.97); }
 .term { padding: 12px 14px 10px; border-radius: 12px; background: var(--paper-2); border: 1.5px solid var(--rule); max-width: none !important; }
 .term__name { margin: 0 0 4px; font-family: var(--f-display); font-stretch: 85%; font-weight: 780; font-size: 1.02rem; line-height: 1.2; color: var(--stamp); }
 .term__def { margin: 0; font-size: .93rem; line-height: 1.45; }
+.term__bsp { margin: 7px 0 0; padding-top: 7px; border-top: 1px dashed var(--rule); font-size: .9rem; line-height: 1.45; color: var(--ink-2); }
+.term__bsp-label { font-family: var(--f-display); font-stretch: 85%; font-weight: 760; color: var(--school); }
 .term.is-locked { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 8px 12px; background: transparent; border-style: dashed; }
 .term.is-locked .term__name { margin: 0; color: #6b7184; letter-spacing: .3em; }
 .term.is-locked .term__def { color: var(--pencil); font-size: .86rem; }
